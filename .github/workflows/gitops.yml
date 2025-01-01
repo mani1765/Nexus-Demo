@@ -38,6 +38,6 @@ jobs:
     - name: Update Deployment YAML
       run: |
           git pull 
-          git add /home/runner/work/Nexus-Demo/Nexus-Demo/target/*.jar
+          git add -f target/*.jar
           git commit -m "Add .war file"
           git push
